@@ -7,13 +7,16 @@ const PORT = process.env.PORT || 8080
 
 app.listen(PORT, () => console.log (`Server listening on ${PORT}`));
 
-
+/* 
  app.get('/',(req, res) => {
     res.sendFile(path.join(__dirname,'./Develop/public/index.html'));
  });
 
+ app.get('/',(req, res) => {
+    res.sendFile(path.join(__dirname,'./Develop/public/notes.html'));
+ }); */
 
-/* app.use(express.static(path.join(__dirname, 'public'))); */
+ app.use(express.static(path.join(__dirname, './Develop/public')));
 
 /* app.use(noTaker); */
 
@@ -21,10 +24,3 @@ app.listen(PORT, () => console.log (`Server listening on ${PORT}`));
     console.log ('Note Taker');
     next();
 } */
-  
-    
-
-
-
-/* const { debugPort } = require('process');
-const { prototype } = require('events'); */
