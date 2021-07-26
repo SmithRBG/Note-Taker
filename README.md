@@ -4,7 +4,8 @@ This application will allow users to write and keep track of notes. (In Progress
 
 ## Usage
 ```
-This app will allow you to keep write and save notes. You will be able to review them and submit them as well.
+This app will allow you to keep write and save notes. 
+You will be able to review them and submit them as well.
 ```
 ## Dependencies
 ```
