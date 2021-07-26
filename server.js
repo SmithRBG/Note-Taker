@@ -1,9 +1,6 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const html = require('./Routes/html');
-const api = require('./Routes/api');
-
 
 const PORT = process.env.PORT || 8080
 
@@ -25,6 +22,8 @@ app.use(express.json());
 app.use(express.stattic("public"));
 app.use("/", html);
 app.use("/api", api);
+require("./Routes/api")(app);
+require("./Routes/html")(app);
 
 /*  //route methods
 app
